@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-special-rsqrt
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterRsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rsqrt@deno/mod.js';
+var iterRsqrt = require( '@stdlib/math-iter-special-rsqrt' );
 ```
 
 #### iterRsqrt( iterator )
@@ -60,7 +78,7 @@ import iterRsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-r
 Returns an [iterator][mdn-iterator-protocol] which iteratively computes the reciprocal (inverse) [square root][@stdlib/math/base/special/rsqrt].
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var it = iterRsqrt( array2iterator( [ 1, 4, 9 ] ) );
 // returns <Object>
@@ -108,8 +126,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@deno/mod.js';
-import iterRsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rsqrt@deno/mod.js';
+var uniform = require( '@stdlib/random-iter-uniform' );
+var iterRsqrt = require( '@stdlib/math-iter-special-rsqrt' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 1000.0, {
@@ -167,7 +185,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -197,8 +215,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-iter-special-rsqrt.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-iter-special-rsqrt
 
-[test-image]: https://github.com/stdlib-js/math-iter-special-rsqrt/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/math-iter-special-rsqrt/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/math-iter-special-rsqrt/actions/workflows/test.yml/badge.svg?branch=v0.2.0
+[test-url]: https://github.com/stdlib-js/math-iter-special-rsqrt/actions/workflows/test.yml?query=branch:v0.2.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-iter-special-rsqrt/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-iter-special-rsqrt?branch=main
@@ -234,9 +252,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/rsqrt]: https://github.com/stdlib-js/math-base-special-rsqrt/tree/deno
+[@stdlib/math/base/special/rsqrt]: https://github.com/stdlib-js/math-base-special-rsqrt
 
-[@stdlib/math/iter/special/sqrt]: https://github.com/stdlib-js/math-iter-special-sqrt/tree/deno
+[@stdlib/math/iter/special/sqrt]: https://github.com/stdlib-js/math-iter-special-sqrt
 
 <!-- </related-links> -->
 
