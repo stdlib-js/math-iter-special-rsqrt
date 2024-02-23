@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterRsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rsqrt@esm/index.mjs';
+import iterRsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rsqrt@v0.2.1-esm/index.mjs';
 ```
 
 #### iterRsqrt( iterator )
@@ -114,7 +114,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <script type="module">
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import iterRsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rsqrt@esm/index.mjs';
+import iterRsqrt from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rsqrt@v0.2.1-esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 1000.0, {
